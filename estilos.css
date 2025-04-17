@@ -58,12 +58,6 @@ body.home {
   background-position: center;
 }
 
-body.catalogo {
-  background-color: rgb(195, 230, 195);
-}
-
-
-
 /* Estilos para el contenedor de texto y la imagen */
 .contenedor {
   position: relative;
@@ -237,4 +231,56 @@ main.servicio-main {
 
 .servicio-texto button:hover {
   background-color: #388E3C;
+}
+
+/* Catalogo*/
+body.catalogo {
+  background-color: rgb(195, 230, 195);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.catalogo-main {
+  display: flex;
+  flex-direction: row; /* Asegura disposición horizontal */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  flex-wrap: nowrap; /* <-- evita que se apile */
+}
+
+.catalogo-texto {
+  width: 40%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.catalogo-img {
+  width: 40%;
+}
+
+.catalogo-img img {
+  width: 100%;  /* <-- Muy importante para que se ajuste */
+  height: auto;
+  border-radius: 10px;
+}
+
+.boton-consulta {
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
