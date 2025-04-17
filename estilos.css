@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,22 +12,28 @@ header {
 }
 
 header h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   color: #4CAF50; /* Verde */
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
   margin: 0.5rem 0;
 }
 
 nav {
-  margin-top: 1rem;
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Calibri', 'Arial', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-weight: bold;
+}
+
+nav a:hover {
+  color: #2C6B2F;
 }
 
 main {
@@ -47,22 +52,112 @@ img {
 }
 
 body.home {
-  background-color: #e8f5e9; /* Verde clarito */
+  background-color: white;
+  background-image: url('./media/fondo.jpg'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
 }
 
 body.catalogo {
-  background-color: #fff3e0; /* Naranja clarito */
+  background-color: rgb(195, 230, 195);
 }
 
 body.servicio {
-  background-color: #e3f2fd; /* Azul clarito */
+  background-color: #e3f2fd;
 }
 
+/* Estilos para el contenedor de texto y la imagen */
+.contenedor {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 500px; /* Ajusta el tamaño según lo necesites */
+}
+
+/* Estilos para el contenedor de texto */
+.texto-contenedor {
+  position: absolute;
+  top: 50%;  /* Centra verticalmente */
+  left: 50%;  /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta la posición para que el contenedor esté centrado */
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+
+  /* Cambiar tipo de letra y aumentar tamaño */
+  font-family: 'Arial', sans-serif;  /* Cambia 'Arial' por el tipo de letra que prefieras */
+  font-size: 2rem;  /* Aumentar el tamaño de la fuente, ajusta el valor según lo necesites */
+}
+
+/* Para las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Body contacto*/
 body.contacto {
-  background-color: #fce4ec; /* Rosa clarito */
+  background-color: #aad6ff; /* Fondo de la página de contacto */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-button, nav a {
-  font-family: 'Arial', sans-serif; /* Cambiá por la fuente que prefieras */
-  font-weight: bold; /* Opcional */
+header {
+  background-color: white;
+  color: black;
+  padding: 1rem;
 }
+
+nav {
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Calibri', 'Arial', sans-serif;
+  font-size: 1.5rem;
+}
+
+main.contacto-main {
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /* Espacio entre imagen y formulario */
+  padding: 2rem 4rem;
+  flex-wrap: wrap; /* Para pantallas chicas, que se apile */
+}
+
+.imagen-container {
+  width: 40%;
+}
+
+.imagen-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 1rem; /* un poco más */
+  font-size: 1.1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 150%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  width: 150%;
+  padding: 0.8rem 2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,16 +15,21 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Contacto</h2>
-    <img src="https://via.placeholder.com/600x300" alt="Nuestra ubicación">
-    <form style="margin-top: 2rem;">
-      <input type="text" placeholder="Nombre completo:" required><br><br>
-      <input type="email" placeholder="E-mail:" required><br><br>
-      <input type="Celular" placeholder="Celular:" required><br><br>
-      <textarea placeholder="Indicanos tu consulta." rows="4" required></textarea><br><br>
-      <button type="submit">Enviar</button>
-    </form>
+  <main class="contacto-main">
+    <div class="imagen-container">
+      <img src="./media/contacto.jpg" alt="Nuestra ubicación">
+    </div>
+
+    <div class="formulario-container">
+      <h2>Contacto</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre completo:" required><br><br>
+        <input type="email" placeholder="E-mail:" required><br><br>
+        <input type="tel" placeholder="Celular:" required><br><br>
+        <textarea placeholder="Indicanos tu consulta." rows="4" required></textarea><br><br>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </div>
   </main>
 </body>
 </html>
