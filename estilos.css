@@ -7,13 +7,17 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 1rem;
 }
 
 header h1 {
-  margin: 0;
+  font-size: 5rem;
+  color: #4CAF50; /* Verde */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  margin: 0.5rem 0;
 }
 
 nav {
@@ -23,7 +27,7 @@ nav {
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #007BFF;
+  color: black;
   font-weight: bold;
 }
 
@@ -40,4 +44,25 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+
+body.home {
+  background-color: #e8f5e9; /* Verde clarito */
+}
+
+body.catalogo {
+  background-color: #fff3e0; /* Naranja clarito */
+}
+
+body.servicio {
+  background-color: #e3f2fd; /* Azul clarito */
+}
+
+body.contacto {
+  background-color: #fce4ec; /* Rosa clarito */
+}
+
+button, nav a {
+  font-family: 'Arial', sans-serif; /* Cambiá por la fuente que prefieras */
+  font-weight: bold; /* Opcional */
 }
