@@ -82,7 +82,7 @@ img {
 
 body.home {
   background-color: white;
-  background-image: url('./media/fondo.jpg'); /* Imagen de fondo */
+  background-image: url('./media/Parque-home.avif'); /* Imagen de fondo */
   background-size: cover;
   background-position: center;
 }
@@ -101,7 +101,7 @@ body.home {
   top: 50%;  /* Centra verticalmente */
   left: 50%;  /* Centra horizontalmente */
   transform: translate(-50%, -50%); /* Ajusta la posición para que el contenedor esté centrado */
-  background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
   color: rgb(0, 0, 0);
   padding: 20px;
   border-radius: 10px;
@@ -230,8 +230,12 @@ main.servicio-main {
 }
 
 .servicio-texto p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 2rem; /* Tamaño de fuente */
+  color: black; /* Color del texto */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+  text-align: center; /* Justifica el texto */
+  margin-bottom: 20px; /* Espacio debajo del párrafo */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
 }
 
 /* Botón */
@@ -291,17 +295,13 @@ body.catalogo {
   padding: 0;
 }
 body.catalogo h2 {
-  font-size: 3rem; /* Tamaño de fuente */
-  font-weight: bold; /* Negrita */
-  color: #333; /* Color del texto */
-  text-align: center; /* Centrar el texto */
-  margin-top: 20px; /* Espacio encima */
-  margin-bottom: 20px; /* Espacio debajo */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
+  margin-top: 0;
+  font-size: 2rem;
+  color: #4CAF50;
 }
 body.catalogo p {
-  font-size: 2.5rem; /* Tamaño de fuente */
-  color: #555; /* Color del texto */
+  font-size: 2rem; /* Tamaño de fuente */
+  color: black; /* Color del texto */
   line-height: 1.6; /* Altura de línea para mejor legibilidad */
   text-align: center; /* Justifica el texto */
   margin-bottom: 20px; /* Espacio debajo del párrafo */
