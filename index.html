@@ -1,27 +1,27 @@
-<!-- index.html -->
+
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Sitio con Nginx</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f7f7f7;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      color: #666;
-    }
-  </style>
+  <title>Home</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>¡Hola desde Nginx!</h1>
-  <p>Este sitio está siendo servido desde un contenedor Docker con Nginx.</p>
+  <header>
+    <h1>Mi Sitio Web</h1>
+    <nav>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="servicio.html">Servicio</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Bienvenidos</h2>
+    <button onclick="location.href='catalogo.html'">Catálogo</button>
+    <button onclick="location.href='servicio.html'">Servicios</button>
+    <button onclick="location.href='contacto.html'">Contacto</button>
+    <br><br>
+    <img src="https://via.placeholder.com/600x300" alt="Imagen central">
+  </main>
 </body>
 </html>
