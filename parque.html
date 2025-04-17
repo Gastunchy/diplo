@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Servicio</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="servicio">
+  <header>
+    <h1>SIEMPRE VERDE</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="catalogo.html">Catálogo</a> |
+      <div class="menu-dropdown">
+        <a href="#" class="dropbtn">Servicio</a> |
+        <div class="dropdown-content">
+          <a href="parque.html">Parque</a>
+          <a href="pileta.html">Pileta</a>
+        </div>
+      </div>
+      <a href="contacto.html">Contacto</a> |
+    </nav>
+  </header>
+
+  <main class="servicio-main">
+    <div class="servicio-imagen">
+      <div class="carrusel">
+        <img src="./media/pool.webp" alt="Imagen 1" class="carrusel-img active">
+        <img src="./media/Parque.webp" alt="Imagen 2" class="carrusel-img">
+        <img src="./media/pool.webp" alt="Imagen 3" class="carrusel-img">
+      </div>
+    </div>
+
+    <div class="servicio-texto">
+      <h2>¡ESPACIOS VERDES CUIDADOS!</h2>
+      <p>Reparación, venta y asesoramiento técnico.</p>
+      <button onclick="location.href='contacto.html'" class="boton-consulta">Formulario de Consulta</button>
+    </div>
+  </main>
+
+  <script>
+    let index = 0;
+    const imgs = document.querySelectorAll('.carrusel-img');
+
+    setInterval(() => {
+      imgs.forEach((img, i) => {
+        img.classList.remove('active');
+        if (i === index) img.classList.add('active');
+      });
+      index = (index + 1) % imgs.length;
+    }, 3000);
+  </script>
+</body>
+</html>
