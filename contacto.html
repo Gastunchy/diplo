@@ -1,42 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Contacto</title>
-  <link rel="stylesheet" href="estilos.css">
-</head>
-<body class="contacto">
-  <header>
-    <h1>SIEMPRE VERDE</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="catalogo.html">Catálogo</a> |
-      <div class="menu-dropdown">
-        <a href="#" class="dropbtn">Servicio</a> |
-        <div class="dropdown-content">
-          <a href="parque.html">Parque</a>
-          <a href="pileta.html">Pileta</a>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body class="contacto">
+    <header>
+      <h1>SIEMPRE VERDE</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="catalogo.html">Catálogo</a> |
+        <div class="menu-dropdown">
+          <a href="#" class="dropbtn">Servicio</a> |
+          <div class="dropdown-content">
+            <a href="parque.html">Parque</a>
+            <a href="pileta.html">Pileta</a>
+          </div>
+        </div>
+        <a href="contacto.html">Contacto</a> |
+      </nav>
+    </header>
+
+    <main class="contacto-main">
+      <div class="imagen-container">
+        <img src="./media/Contact_Us.png" alt="Nuestra ubicación">
+      </div>
+
+      <div class="formulario-container">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Nombre completo:" required><br><br>
+          <input type="email" placeholder="E-mail:" required><br><br>
+          <input type="tel" placeholder="Celular:" required><br><br>
+          <textarea placeholder="Indicanos tu consulta." rows="4" required></textarea><br><br>
+          <button type="submit">Enviar consulta</button>
+        </form>
+      </div>
+    </main>
+    <div class="chatbot-wrapper">
+      <div class="chatbot-container">
+        <div class="chatbot-header">Asistente Virtual</div>
+        <div class="chatbot-body">
+          <p>Hola 👋 ¿En qué puedo ayudarte?</p>
+        </div>
+        <div class="chatbot-input">
+          <input type="text" placeholder="Escribí tu mensaje...">
+          <button>Enviar</button>
         </div>
       </div>
-      <a href="contacto.html">Contacto</a> |
-    </nav>
-  </header>
-
-  <main class="contacto-main">
-    <div class="imagen-container">
-      <img src="./media/contacto.jpg" alt="Nuestra ubicación">
+      <div class="chatbot-icon">💬</div>
     </div>
-
-    <div class="formulario-container">
-      <h2>Contacto</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Nombre completo:" required><br><br>
-        <input type="email" placeholder="E-mail:" required><br><br>
-        <input type="tel" placeholder="Celular:" required><br><br>
-        <textarea placeholder="Indicanos tu consulta." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar consulta</button>
-      </form>
-    </div>
-  </main>
-</body>
-</html>
+  </body>
+  </html>
