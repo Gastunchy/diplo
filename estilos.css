@@ -62,9 +62,7 @@ body.catalogo {
   background-color: rgb(195, 230, 195);
 }
 
-body.servicio {
-  background-color: #e3f2fd;
-}
+
 
 /* Estilos para el contenedor de texto y la imagen */
 .contenedor {
@@ -161,3 +159,82 @@ main.contacto-main {
   font-size: 1.5rem;
 }
 
+/* body Servicio*/
+/* body Servicio */
+body.servicio {
+  background-color: #e3f2fd;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal en flex */
+main.servicio-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+/* Imagen */
+.servicio-imagen img {
+  max-width: 100%;
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Texto */
+.servicio-texto {
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+  font-size: 1.1rem; /* Tamaño del texto general */
+  line-height: 1.6;
+}
+
+.servicio-texto h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.servicio-texto p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Botón */
+.boton-consulta {
+  display: block;
+  margin: 2rem auto 0 auto; /* Centrado horizontal */
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.servicio-texto button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.servicio-texto button:hover {
+  background-color: #388E3C;
+}
