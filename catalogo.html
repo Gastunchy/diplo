@@ -30,61 +30,79 @@
       height: auto;
       border-radius: 5px; /* Bordes redondeados para la imagen */
     }
+    .chatbot-wrapper {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .chatbot-container {
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .chatbot-header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .chatbot-body {
+      padding: 10px;
+    }
+    .chatbot-input {
+      display: flex;
+      padding: 10px;
+      background-color: #f1f1f1;
+    }
+    .chatbot-input input {
+      flex: 1;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+    .chatbot-input button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    .chatbot-input button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
-<body class="catalogo">
-  <header>
-    <h1>SIEMPRE VERDE</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="catalogo.html">Catálogo</a> |
-      <div class="menu-dropdown">
-        <a href="#" class="dropbtn">Servicio</a> |
-        <div class="dropdown-content">
-          <a href="parque.html">Parque</a>
-          <a href="pileta.html">Pileta</a>
-        </div>
-      </div>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
-
-  <main class="catalogo-main">
-    <div class="catalogo-texto">
-      <h2>¡ESPACIOS VERDES CUIDADOS!</h2>
-      <p>
-        Reparación, venta y asesoramiento técnico.
-      </p>
-      <button class="boton-consulta" onclick="location.href='contacto.html'">Solicitá tu Catálogo 2024</button>
-    </div>
+<body>
   
-    <div class="catalogo-img">
-      <img src="./media/Parque.webp" alt="Productos del catálogo">
+  <div class="productos">
+    <h3>Productos Disponibles</h3>
+    <div class="producto">
+      <img src="./media/producto1.jpg" alt="Producto 1">
+      <h4>Producto 1</h4>
+      <p>Descripción de Producto 1.</p>
+      <p>Precio: $XX.XX</p>
     </div>
+    <div class="producto">
+      <img src="./media/producto2.jpg" alt="Producto 2">
+      <h4>Producto 2</h4>
+      <p>Descripción de Producto 2.</p>
+      <p>Precio: $XX.XX</p>
+    </div>
+    <div class="producto">
+      <img src="./media/producto3.jpg" alt="Producto 3">
+      <h4>Producto 3</h4>
+      <p>Descripción de Producto 3.</p>
+      <p>Precio: $XX.XX</p>
+    </div>
+    <!-- Agrega más productos según sea necesario -->
+  </div>
 
-    <div class="productos">
-      <h3>Productos Disponibles</h3>
-      <div class="producto">
-        <img src="./media/producto1.jpg" alt="Producto 1">
-        <h4>Producto 1</h4>
-        <p>Descripción de Producto 1.</p>
-        <p>Precio: $XX.XX</p>
-      </div>
-      <div class="producto">
-        <img src="./media/producto2.jpg" alt="Producto 2">
-        <h4>Producto 2</h4>
-        <p>Descripción de Producto 2.</p>
-        <p>Precio: $XX.XX</p>
-      </div>
-      <div class="producto">
-        <img src="./media/producto3.jpg" alt="Producto 3">
-        <h4>Producto 3</h4>
-        <p>Descripción de Producto 3.</p>
-        <p>Precio: $XX.XX</p>
-      </div>
-      <!-- Agrega más productos según sea necesario -->
-    </div>
-  </main>
   <div class="chatbot-wrapper">
     <div class="chatbot-container">
       <div class="chatbot-header">Asistente Virtual</div>
@@ -98,5 +116,6 @@
     </div>
     <div class="chatbot-icon">💬</div>
   </div>
+  
 </body>
 </html>
