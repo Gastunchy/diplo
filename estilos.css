@@ -1,3 +1,4 @@
+/* Estilos Generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,12 @@ body {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el Header */
 header {
   background-color: white;
   color: black;
@@ -14,11 +21,11 @@ header {
 header h1 {
   font-size: 6rem;
   color: #4CAF50; /* Verde */
-  text-align: center;
   text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
   margin: 0.5rem 0;
 }
-/* Estilos para el menú desplegable */
+
+/* Estilos para el Menú Desplegable */
 .menu-dropdown {
   position: relative;
   display: inline-block;
@@ -48,10 +55,10 @@ header h1 {
   display: block;
 }
 
+/* Estilos de Navegación */
 nav {
   font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Calibri', 'Arial', sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
 }
 
 nav a {
@@ -65,29 +72,38 @@ nav a:hover {
   color: #2C6B2F;
 }
 
-main {
-  padding: 2rem;
-}
-
-button {
+/* Estilos Comunes para Botones */
+button, .boton-consulta {
   padding: 0.5rem 1rem;
   margin: 1rem;
   cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+button:hover, .boton-consulta:hover {
+  background-color: #45a049;
 }
 
-body.home {
-  background-color: white;
-  background-image: url('./media/Parque-home.avif'); /* Imagen de fondo */
-  background-size: cover;
-  background-position: center;
+/* Estilos para Contenedores */
+.contenedor, .imagen-container, .formulario-container, .catalogo-texto {
+  width: 40%;
+  min-width: 300px;
+  padding: 2rem;
+  border-radius: 15px;  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilos para el contenedor de texto y la imagen */
+.formulario-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
 .contenedor {
   position: relative;
   display: inline-block;
@@ -95,7 +111,6 @@ body.home {
   height: 500px; /* Ajusta el tamaño según lo necesites */
 }
 
-/* Estilos para el contenedor de texto */
 .texto-contenedor {
   position: absolute;
   top: 50%;  /* Centra verticalmente */
@@ -105,78 +120,12 @@ body.home {
   color: rgb(0, 0, 0);
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
+  text-align: center; /* Asegúrate de que el texto esté centrado */
   max-width: 600px;
-
-  /* Cambiar tipo de letra y aumentar tamaño */
-  font-family: 'Arial', sans-serif;  /* Cambia 'Arial' por el tipo de letra que prefieras */
-  font-size: 2rem;  /* Aumentar el tamaño de la fuente, ajusta el valor según lo necesites */
+  width: 90%; /* Opcional: Para asegurar que no se salga de la pantalla */
 }
 
-/* Para las imágenes */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Body contacto*/
-body.contacto {
-  background-color: #aad6ff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-header {
-  background-color: white;
-  color: black;
-  padding: 1rem;
-}
-
-nav {
-  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Calibri', 'Arial', sans-serif;
-  font-size: 1.5rem;
-}
-
-main.contacto-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem 4rem;
-  flex-wrap: wrap;
-}
-
-.imagen-container {
-  width: 40%;
-  min-width: 300px;
-}
-
-.imagen-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.formulario-container {
-  width: 40%;
-  min-width: 300px;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  text-align: left;
-}
-
-.formulario-container h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #333;
-}
-
+/* Estilos para el Formulario de Contacto */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -186,111 +135,14 @@ main.contacto-main {
   border: 1px solid #ccc;
   font-size: 1.1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 .contact-form textarea {
   resize: vertical;
 }
 
-.contact-form button {
-  width: 100%;
-  padding: 1rem;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 1.3rem;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #45a049;
-}
-
-/* body Servicio */
-body.servicio {
-  background-color: #e3f2fd;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Contenedor principal en flex */
-main.servicio-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 3rem;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-/* Imagen */
-.servicio-imagen img {
-  max-width: 100%;
-  width: 450px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Texto */
-.servicio-texto {
-  max-width: 500px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
-  font-size: 1.1rem; /* Tamaño del texto general */
-  line-height: 1.6;
-}
-
-.servicio-texto h2 {
-  margin-top: 0;
-  font-size: 2rem;
-  color: #4CAF50;
-}
-
-.servicio-texto p {
-  font-size: 2rem; /* Tamaño de fuente */
-  color: black; /* Color del texto */
-  line-height: 1.6; /* Altura de línea para mejor legibilidad */
-  text-align: center; /* Justifica el texto */
-  margin-bottom: 20px; /* Espacio debajo del párrafo */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
-}
-
-/* Botón */
-.boton-consulta {
-  display: block;
-  margin: 2rem auto 0 auto; /* Centrado horizontal */
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.servicio-texto button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.servicio-texto button:hover {
-  background-color: #388E3C;
-}
+/* Estilos para Carrusel */
 .carrusel {
   position: relative;
   width: 100%;
@@ -313,72 +165,61 @@ main.servicio-main {
   from { opacity: 0.5; }
   to { opacity: 1; }
 }
-/* Catalogo*/
-body.catalogo {
-  background-color: rgb(195, 230, 195);
+
+/* Estilos Específicos de Páginas */
+body.home {
+  background-color: white;
+  background-image: url('./media/Parque-home.avif');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Asegúrate de que el body tenga posición relativa si se usan elementos absolutos */
+}
+
+body.contacto {
+  background-color: #aad6ff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-body.catalogo h2 {
-  margin-top: 0;
-  font-size: 2rem;
-  color: #4CAF50;
+
+main.contacto-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambiado para que se alinee a la parte superior */
+  gap: 3rem;
+  padding: 2rem 4rem;
+  flex-wrap: wrap; /* Permite que los contenedores se ajusten en pantallas más pequeñas */
 }
-body.catalogo p {
-  font-size: 2rem; /* Tamaño de fuente */
-  color: black; /* Color del texto */
-  line-height: 1.6; /* Altura de línea para mejor legibilidad */
-  text-align: center; /* Justifica el texto */
-  margin-bottom: 20px; /* Espacio debajo del párrafo */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
+
+body.servicio {
+  background-color: #e3f2fd;
 }
+
+main.servicio-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+body.catalogo {
+  background-color: rgb(195, 230, 195);
+}
+
 .catalogo-main {
   display: flex;
-  flex-direction: row; /* Asegura disposición horizontal */
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 3rem;
   padding: 2rem 4rem;
-  flex-wrap: nowrap; /* <-- evita que se apile */
+  flex-wrap: nowrap;
 }
 
-.catalogo-texto {
-  width: 40%;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.catalogo-img {
-  width: 40%;
-}
-
-.catalogo-img img {
-  width: 100%;  /* <-- Muy importante para que se ajuste */
-  height: auto;
-  border-radius: 10px;
-}
-
-.boton-consulta {
-  display: block;
-  margin: 2rem auto 0 auto;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/*CHATBOT*/
-/* Botón flotante y contenedor */
+/* Estilos para el Chatbot */
 .chatbot-wrapper {
   position: fixed;
   bottom: 20px;
@@ -389,7 +230,6 @@ body.catalogo p {
   z-index: 1000;
 }
 
-/* Icono flotante (botón pequeño) */
 .chatbot-icon {
   width: 50px;
   height: 50px;
@@ -404,7 +244,6 @@ body.catalogo p {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Chatbot oculto por defecto, animación suave */
 .chatbot-container {
   opacity: 0;
   transform: translateY(20px);
@@ -415,32 +254,29 @@ body.catalogo p {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   overflow: hidden;
-  font-family: Arial, sans-serif;
   margin-bottom: 10px;
-  position: relative;
 }
 
-/* Mostrar al pasar el mouse por el wrapper */
 .chatbot-wrapper:hover .chatbot-container {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-/* Estilos internos */
 .chatbot-header {
   background-color: #4CAF50;
   color: white;
   padding: 1rem;
   font-weight: bold;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .chatbot-body {
   padding: 1rem;
   height: 150px;
   overflow-y: auto;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .chatbot-input {
@@ -466,4 +302,59 @@ body.catalogo p {
   cursor: pointer;
 }
 
+/*---------------------*/
 
+
+
+.catalogo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.catalogo-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las casillas flotantes se ajusten */
+  justify-content: center; /* Centra las casillas en el contenedor */
+  gap: 2rem; /* Espacio entre las casillas */
+}
+
+.producto {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 250px; /* Ancho fijo para las casillas */
+  text-align: left; /* Alineación del texto a la izquierda */
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+.producto img {
+  width: 100%; /* Imagen ocupa el ancho completo de la casilla */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.precio {
+  display: block; /* Hace que el precio esté en su propia línea */
+  font-size: 1.5rem;
+  color: #4CAF50; /* Color verde para el precio */
+  margin: 1rem 0;
+}
+
+.btn-agregar {
+  background-color: #4CAF50; /* Color del botón */
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #45a049; /* Color del botón al pasar el ratón */
+}
